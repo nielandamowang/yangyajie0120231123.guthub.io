@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>bulb</title>
+    <style>
+        .abc{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class='abc'>
+        <h3>点击灯泡就可以打开或关闭灯泡</h3>
+            <img id="myimage" onclick="changeImage()" src="images/pic_bulboff.gif" width="100" height="180">
+            <script>
+                function changeImage(){
+                    const element = document.getElementById("myimage");
+                    if (element.src.includes("pic_bulboff.gif")){
+                        element.src = "images/pic_bulbon.gif";
+                    }else{
+                        element.src = "images/pic_bulboff.gif"
+                    }
+                }
+            </script>
+    </div>
+</body>
+</html>
